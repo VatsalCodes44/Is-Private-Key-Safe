@@ -11,8 +11,8 @@ RPC_URL7=""
 
 
 for i in 1 2 3 4 5 6 7; do
-  RPC_URL="$RPC_URL" \
-  timeout=3 \
+  RPC_URL="$RPC_URL${i}" \
+  timeout=10 \
   FILE_NAME="keys${i}.txt" \
   node "$ENTRY" &
 done
